@@ -1,0 +1,67 @@
+
+#container {
+
+  height: 100vh;
+  width: 100vw;
+  background: #040304;
+}
+
+#networkCanvas {
+  position: absolute;
+  top: 100px;
+  //height: 400px;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  //height: 10vh;
+  background: #3e3e3e;
+  z-index: 100;
+  padding: 1rem;
+
+  div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  button {
+    padding: 0.2rem 0.5rem;
+    font-weight: bold;
+    font-size: small;
+    margin: 0 1rem;
+  }
+
+  h1 {
+    display: inline-block;
+  }
+
+  span {
+    display: flex;
+  }
+}
+
+#my-popover {
+  margin: 0;
+  right: 0;
+  top: 5rem;
+  margin-left: auto;
+  margin-right: 2rem;
+}
+
+.brains {
+  font-weight: bold;
+}
+
+h1 {
+  font-size: medium;
+  color: white;
+}
+
+span {
+  align-items: center;
+}
+

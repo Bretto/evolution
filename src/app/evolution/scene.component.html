@@ -1,0 +1,24 @@
+<header>
+  <div>
+    <span>
+      <h1>EVOLUTION</h1>
+<!--      -->
+      <button (click)="onSave()" [disabled]="canSave">SAVE</button>
+      <button (click)="onDelete()">RESET</button>
+    </span>
+    <span>
+<!--      <button (click)="onAutoPilot()">AUTO PILOT {{autoPilotBtn}}</button>-->
+      <button (click)="onPause()">{{pauseBtn}}</button>
+    </span>
+    <span>
+<!--      #{{car?.uid}} /-->
+      <h1>Cars {{carsRunning}} | {{lastY}}M / {{bestDistance}}M</h1>
+      <button popovertarget="my-popover">VERSION:{{brainVersion}}</button>
+    </span>
+  </div>
+</header>
+<div id="container"></div>
+<canvas id="networkCanvas"></canvas>
+<div popover id="my-popover" class="brains">
+  <div *ngFor="let item of brainListing">V{{ item?.version }} : {{item?.distance}}M</div>
+</div>
